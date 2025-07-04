@@ -74,10 +74,10 @@ def show_how_to_use_page():
     """)    
 
     st.header('Wanna Dive🤿 deep into the code')
-    st.markdown('''
-My Github : https://github.com/Ambarish128/australia-real_estate-price-predictor
-                Feel Free to Explore and suggest any improvements :)
-''')
+    st.markdown("""
+    My Github : https://github.com/Ambarish128/australia-real_estate-price-predictor
+    Feel Free to Explore and suggest any improvements :)
+    """)
     
     st.markdown("---")
     st.markdown("Built with ❤️ by [Ambarish Shashank Gadgil](https://www.linkedin.com/in/ambarish-gadgil-484b9a203/)")
