@@ -23,13 +23,13 @@ import shap
 
 # Load saved encoders from models/
 def load_encoders():
-    with open("../models/suburb_encoder.pkl", "rb") as f:
+    with open("models/suburb_encoder.pkl", "rb") as f:
         suburb_le = pickle.load(f)
-    with open("../models/street_encoder.pkl", "rb") as f:
+    with open("models/street_encoder.pkl", "rb") as f:
         street_le = pickle.load(f)
-    with open("../models/address_encoder.pkl", "rb") as f:
+    with open("models/address_encoder.pkl", "rb") as f:
         address_le = pickle.load(f)
-    with open("../models/description_encoder.pkl", "rb") as f:
+    with open("models/description_encoder.pkl", "rb") as f:
         desc_le = pickle.load(f)
     return suburb_le, street_le, address_le, desc_le
 

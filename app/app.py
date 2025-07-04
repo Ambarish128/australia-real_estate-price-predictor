@@ -75,15 +75,15 @@ def navbar():
 # --- Load model and encoders ---
 @st.cache_resource
 def load_model_and_encoders():
-    with open("../models/tuned_xgb_model.pkl", "rb") as f:
+    with open("models/tuned_xgb_model.pkl", "rb") as f:
         model = pickle.load(f)
-    with open("../models/suburb_encoder.pkl", "rb") as f:
+    with open("models/suburb_encoder.pkl", "rb") as f:
         suburb_le = pickle.load(f)
-    with open("../models/street_encoder.pkl", "rb") as f:
+    with open("models/street_encoder.pkl", "rb") as f:
         street_le = pickle.load(f)
-    with open("../models/address_encoder.pkl", "rb") as f:
+    with open("models/address_encoder.pkl", "rb") as f:
         address_le = pickle.load(f)
-    with open("../models/description_encoder.pkl", "rb") as f:
+    with open("models/description_encoder.pkl", "rb") as f:
         desc_le = pickle.load(f)
     return model, suburb_le, street_le, address_le, desc_le
 

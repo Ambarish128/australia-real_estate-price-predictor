@@ -71,19 +71,19 @@ def prepare_features_df(df, suburb_le, street_le, address_le, desc_le):
     return df[final_cols]
 
 # --- Load model only once ---
-with open("../models/tuned_xgb_model.pkl", "rb") as f:
+with open("models/tuned_xgb_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 #model encoders
 @st.cache_resource
 def load_encoders():    
-    with open("../models/suburb_encoder.pkl", "rb") as f:
+    with open("models/suburb_encoder.pkl", "rb") as f:
         suburb_le = pickle.load(f)
-    with open("../models/street_encoder.pkl", "rb") as f:
+    with open("models/street_encoder.pkl", "rb") as f:
         street_le = pickle.load(f)
-    with open("../models/address_encoder.pkl", "rb") as f:
+    with open("models/address_encoder.pkl", "rb") as f:
         address_le = pickle.load(f)
-    with open("../models/description_encoder.pkl", "rb") as f:
+    with open("models/description_encoder.pkl", "rb") as f:
         desc_le = pickle.load(f)
     return suburb_le, street_le, address_le, desc_le
 
@@ -151,7 +151,7 @@ def bulk_prediction_ui():
     st.header("📂 Bulk Property Price Prediction")
     uploaded_file = st.file_uploader("Upload CSV file with property data", type=["csv"])
     st.markdown("📝 **Note:** Make sure your CSV contains all required columns with exact names: `Postcode`, `Sale_Year`, `Sale_Month`, `Sale_Weekday`, `Property_Use`, `Suburb`, `Street_Name`, `Description`, `Address`.")
-    sample_path = os.path.join("../data/raw/", "test_bulk_predictions.csv")
+    sample_path = os.path.join("data/raw/", "test_bulk_predictions.csv")
     if os.path.exists(sample_path):
         with open(sample_path, "rb") as f:
             st.download_button("📄 Download Sample CSV", f, file_name="sample_input.csv", mime="text/csv")
