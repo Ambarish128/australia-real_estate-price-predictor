@@ -15,12 +15,7 @@ ENV/
 # VSCode settings
 .vscode/
 
-# Data files
-data/raw/
-data/processed/
 
-# Models
-models/
 
 # Logs
 *.log
