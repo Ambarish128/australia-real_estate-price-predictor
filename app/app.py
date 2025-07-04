@@ -90,7 +90,7 @@ def load_model_and_encoders():
 # --- Load and cache data ---
 @st.cache_data
 def load_data():
-    return pd.read_csv("../data/processed/feature_engineered_data.csv")
+    return pd.read_csv("data/processed/feature_engineered_data.csv")
 
 @st.cache_data
 def create_mapping_df(df):
