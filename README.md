@@ -98,8 +98,8 @@ requirements.txt
 
 1. **Clone the repository:**
       
-   git clone https://github.com/yourusername/nsw-property-price-predictor.git
-   cd nsw-property-price-predictor
+   git clone [https://github.com/yourusername/nsw-property-price-predictor.git](https://github.com/Ambarish128/australia-real_estate-price-predictor)
+   cd australia-real_estate-price-predictor
   
 2. **Install dependencies:**
     
