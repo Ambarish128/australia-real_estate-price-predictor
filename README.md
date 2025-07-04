@@ -131,6 +131,7 @@ requirements.txt
 ## Demo
 
 Interactive Streamlit app showcasing property price prediction, SHAP explainability, and bulk CSV upload feature.
+https://youtu.be/zOSc4zVCzyo
 
 ---
 
