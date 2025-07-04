@@ -109,7 +109,7 @@ requirements.txt
 3. **Run the parser script to extract and clean data:**
      python src/parser.py
    
-4.**Execute the feature engineering notebook or script** (notebooks/feature_engineering.ipynb).
+  4.**Execute the feature engineering notebook or script** (notebooks/feature_engineering.ipynb).
 
 5. **Train the model via notebooks/Model_training.ipynb or load the pre-trained model.**
 
@@ -169,6 +169,8 @@ Please make sure your code follows the existing style and includes appropriate c
 - Add more granular property features (e.g., number of bedrooms, bathrooms).  
 
 ---
+## LIVE App
+The app is live at [NSW_Price_Predictor](https://australia-realestate-price-predictor-7fjkl86kcsomc5zx96fh46.streamlit.app/)
 
 ## Author & Contact
 
